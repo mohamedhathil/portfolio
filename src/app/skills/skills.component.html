@@ -1,0 +1,114 @@
+<div class="app-container">
+    <div id="tabs" #tabs>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="#search"
+              [ngClass]="{
+                active: activeTab === 'search' 
+              }"
+              (click)="search('search', $event)"
+              data-toggle="tab"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#style"
+              [ngClass]="{ active: activeTab === 'result' }"
+              data-toggle="tab"
+              (click)="styles('result', $event)"
+              >Skills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#style"
+              [ngClass]="{ active: activeTab === 'styles' }"
+              data-toggle="tab"
+              (click)="styles('styles', $event)"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              [ngClass]="{ active: activeTab === 'option' }"
+              data-toggle="tab"
+              (click)="option('option', $event)"
+              >Projects</a
+            >
+          </li>
+        </ul>
+
+        <div class="tab-content">
+      
+          <div
+            class="tab-pane"
+            id="standard"
+            [ngClass]="{ active: activeTab === 'search' }"
+          >
+          <app-education></app-education>
+          </div>
+          <!-------custom Field-->
+          <div
+            class="tab-pane"
+            id="result"
+            [ngClass]="{ active: activeTab === 'result' }"
+          >
+            
+       <app-skills-comp></app-skills-comp>
+          </div>
+          <!----------custom field end--------------------->
+          <!------styles start-->
+          <div
+            class="tab-pane styles-tab"
+            id="style"
+            [ngClass]="{ active: activeTab === 'styles' }"
+          >
+          <app-experience></app-experience>
+          </div>
+          <div
+            class="tab-pane styles-tab"
+            id="option"
+            [ngClass]="{ active: activeTab === 'option' }"
+          >
+           mm
+           
+          </div>
+
+          <!-----styles end-->
+        </div>
+      </div>
+<!-- <div class="row text-center">
+    <div class="col-6">
+<img src="\assets\img\ht (5).png">
+    </div>
+    <div class="col-6">
+        <img src="\assets\img\ht (2).png">
+    </div>
+  
+</div>
+<div class="row text-center">
+    <div class="col-6">
+<img src="\assets\img\ht (3).png">
+    </div>
+    <div class="col-6">
+        <img src="\assets\img\ht (4).png">
+    </div>
+  
+</div>
+<div class="row text-center">
+    <div class="col-6">
+<img src="\assets\img\ht (7).png">
+    </div>
+    <div class="col-6">
+        <img src="\assets\img\ht (6).png">
+    </div>
+  
+</div> -->
+</div>

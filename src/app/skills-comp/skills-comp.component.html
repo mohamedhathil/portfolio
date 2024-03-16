@@ -1,0 +1,106 @@
+
+
+
+<div class="block-wrap">
+    <div class="block-col" (click)="view('html')">
+      <div class="block block--transition b">
+    <p class="txt mt-3">Html/css</p>
+        <div class="block-content" >
+   
+        </div>
+      </div>
+    </div>
+
+    <div class="block-col"(click)="view('js')">
+      <div class="block block--transition y">
+        <p class="txt mt-3">JS</p>
+   
+      </div>
+    </div>
+    <div class="block-col" (click)="view('angular')">
+      <div class="block block--transition a">
+        <p class="txt mt-3">Angular</p>
+     
+      </div>
+    </div>
+    <div class="block-col" (click)="view('node')">
+      <div class="block block--transition n">
+        <p class="txt mt-3">NodeJS</p>
+  
+      </div>
+    </div>
+    <div class="block-col" (click)="view('sql')">
+      <div class="block block--transition q">
+        <p class="txt mt-3">Mysql</p>
+      
+      </div>
+    </div>
+  </div>
+  <div class="bd mt-2">
+  <div class="card w-75 html text-dark p-2 bounce" *ngIf="isHtml">
+    <div class="card-body">
+      <h5 class="card-title">Html & CSS</h5>
+      <h6 class="title">Html</h6>
+      <p class="card-text "> Developed and maintained web pages with clean and semantic HTML markup.</p>
+        <p>Implemented responsive web design principles to ensure optimal viewing on various devices.</p>
+        <p>Implemented HTML5 specifications and best practices for modern web development.</p>
+       <h6 class="title">CSS</h6>
+        <p>Styled websites using CSS for consistent and visually appealing layouts.</p>
+       <p>Utilized CSS frameworks, such as Bootstrap, for efficient and responsive design.</p> 
+        <p>Implemented Flexbox and Grid for advanced layout structures.
+        Applied animations and transitions to enhance the user experience.</p>
+    
+    </div>
+  </div>
+  <div class="card w-75 js text-dark p-2 bounce" *ngIf="isJS">
+    <div class="card-body ">
+      <h5 class="card-title">Javascript</h5>
+      <p class="card-text "> Expertise in Modern JavaScript Features: You possess a deep understanding of modern JavaScript features, including those introduced in ECMAScript 6 (ES6) and beyond. This includes arrow functions, destructuring, spread/rest operators, and template literals.</p>
+
+        <p>Utilization of ES6 and Beyond: Your proficiency extends to actively using capabilities offered by ECMAScript standards beyond ES6, demonstrating adaptability to new language enhancements.</p>
+        
+       <p>Optimization of Code Efficiency and Readability: Through the use of modern JavaScript techniques like arrow functions, destructuring, and async/await, you prioritize code efficiency and readability, fostering clean, concise, and maintainable code.</p> 
+        
+       <p>Real-World Problem Solving: You have successfully applied modern JavaScript advancements to tackle real-world programming challenges, showcasing practical problem-solving skills and the ability to translate language features into effective solutions.</p> 
+        
+       <p> Awareness of Updates and Best Practices: Your familiarity with the latest updates and best practices in JavaScript highlights your commitment to continuous learning and improvement, ensuring readiness to address emerging challenges and adhere to industry standards.</p>
+      
+    
+    </div>
+  </div>
+  <div class="card w-75 angular text-dark p-2 bounce" *ngIf="isAngular">
+    <div class="card-body">
+      <h5 class="card-title">Angular</h5>
+      <p class="card-text "><p>1. I possess advanced proficiency in Angular, encompassing a comprehensive understanding of this front-end framework.</p>
+      <p>2. My expertise extends from crafting dynamic and responsive user interfaces to architecting complex single-page applications (SPAs).</p>
+      <p>3. I adeptly utilize Angular's declarative syntax, modular components, and two-way data binding for seamless and interactive user experiences.</p>
+      <p>4. I have successfully implemented Angular services, directives, and pipes to enhance application functionality and ensure code maintainability.</p>
+      <p>5. My proficiency includes working with the latest Angular versions, incorporating features like Angular Ivy and embracing reactive programming paradigms with RxJS to deliver modern and scalable web applications.</p>
+      
+    
+    </div>
+  </div>
+  <div class="card w-75 node text-dark p-2 bounce" *ngIf="isNode">
+    <div class="card-body">
+      <h5 class="card-title">NodeJS</h5>
+      <p class="card-text "><p>1. Currently Expanding Skills in Node.js and Express.js: Actively engaged in learning Node.js and the Express.js framework to build robust and scalable web applications.</p>
+      <p>2. Focus on Creating RESTful APIs: Prioritizing understanding the fundamentals of creating RESTful APIs to facilitate efficient communication between the client and server.</p>
+      <p>3. Implementation of Server-Side Logic: Learning to implement server-side logic using Express's minimalist framework, aiming to enhance code maintainability and scalability.</p>
+      <p>4. Designing Efficient Routing and Middleware: Engaged in learning to design efficient routing and middleware in Express.js to streamline request handling and improve application performance.</p>
+      <p>5. Embracing Asynchronous Programming and Event-Driven Nature: Developing skills in asynchronous programming and understanding the event-driven nature of Node.js to create dynamic and responsive server-side components for modern web applications.</p>
+      
+    
+    </div>
+  </div>
+  <div class="card w-75 sql text-dark p-2 bounce" *ngIf="isMysql">
+    <div class="card-body">
+      <h5 class="card-title">MySql</h5>
+      <p class="card-text "><p>I have hands-on experience in developing full-stack applications using MySQL, Angular, and Node.js, having completed several projects in this technology stack. While my proficiency is currently at 50%, I've successfully contributed to the implementation of robust back-end functionalities using Node.js and Express.</p>
+      <p>Additionally, I've employed Angular to create dynamic and interactive user interfaces on the front end.</p>
+      <p>In terms of database management, I've utilized MySQL for data storage and retrieval, although I acknowledge that there's still room for further exploration and improvement in my MySQL skills.</p>
+      <p>My ongoing commitment to learning and refining my abilities positions me to continue growing in these technologies and contribute effectively to future projects.</p>
+      
+    
+    </div>
+  </div>
+</div>

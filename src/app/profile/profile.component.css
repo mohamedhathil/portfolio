@@ -1,0 +1,132 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~aos/dist/aos.css";
+.body {
+  background-color: #120421;
+  color: white;
+}
+.box {
+  /* margin-left:10%; */
+}
+.name {
+  margin-top: 20%;
+  margin-left: 20%;
+}
+.name-text {
+  background: linear-gradient(45deg, #c01c64, #e5475b);
+  -webkit-background-clip: text; /* WebKit/Blink browsers */
+  color: transparent;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.col-md-6 {
+  position: relative;
+}
+
+.box-1 {
+  position: relative;
+
+  margin-left: 23%;
+}
+
+.img1 {
+  display: block;
+  height: auto;
+  width: 68%;
+}
+
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 51%;
+  height: auto;
+  border-radius: 70%;
+  margin-left: 2%;
+}
+
+p {
+  border-right: solid 3px rgba(0, 255, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 28px;
+  color:white;
+}
+
+.hire {
+  background: linear-gradient(45deg, #c01c64, #e5475b);
+  color: white;
+
+  margin-top: 10%;
+
+  width: 120px;
+}
+.btns {
+  margin-left: 27%;
+
+  text-align: center;
+}
+.hire a{
+text-decoration: none;
+color: white;
+}
+.hire:hover {
+  background: linear-gradient(45deg, #e5659c, #952837);
+}
+/* Animation */
+.animate-text {
+  animation: animated-text 4s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 300px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: #e5475b;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+@media screen and (max-width: 769px) {
+  .btns {
+    margin-left: 15%;
+  
+  
+  }
+  .img1{
+    width:85%
+  }
+  .img2{
+    width:65%;
+
+
+    height: auto;
+    border-radius: 70%;
+
+  }
+  .box-1 {
+    position: relative;
+  
+    margin-left: 14%;
+  }
+  .name{
+    margin-top: 2%;
+  }
+  
+}
+

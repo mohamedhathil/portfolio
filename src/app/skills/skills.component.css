@@ -1,0 +1,57 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~aos/dist/aos.css";
+.title{
+    background: linear-gradient(45deg, #c01c64, #e5475b);
+    -webkit-background-clip: text; /* WebKit/Blink browsers */
+    color: transparent;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Use writing-mode with text-orientation to create vertical texts */
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    font-size: 3rem;
+    letter-spacing: 8px;
+
+
+}
+#tabs{
+    width: 90%;
+    margin: auto;
+}
+#tabs ul{
+   
+  display: flex;
+  justify-content: center;
+  color: white;
+
+}
+ul li {
+    padding: 10px;
+    margin-left: 18px;
+    color: white;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: linear-gradient(45deg, #c01c64, #e5475b);
+    border-bottom: linear-gradient(45deg, #c01c64, #e5475b);
+    border-radius: 5%;
+    color: white;
+}
+ul li a {
+    color: #c01c64;
+}
+ .nav{
+    position: sticky;
+    top:0px;
+    z-index: 100;
+    background-color: #120421;
+ }
+   
+@media screen and (max-width: 769px) {
+    #tabs{
+        width: 100%;
+        margin: auto;
+    }
+    
+  }

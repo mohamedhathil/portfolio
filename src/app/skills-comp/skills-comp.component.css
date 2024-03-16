@@ -1,0 +1,183 @@
+
+
+
+.bd{
+  height: 450px;
+}
+.block-wrap {
+  width: 460px;
+  height: 140px;
+
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 8px;
+  margin-left: 34%;
+
+}
+
+.block-col {
+  display: flex;
+  height: 100%;
+  margin: 0 12px;
+  width: 64px;
+  flex-shrink: 0;
+}
+
+.block {
+  height: 64px;
+  width: 100%;
+  border-radius: 8px;
+  margin: auto 0;
+  position: relative;
+  will-change: transform;
+}
+.block:not(.block--active) {
+  cursor: pointer;
+}
+.block:not(.block--active):hover, .block:not(.block--active).fake-hover {
+  transform: translateY(-12px);
+}
+
+.block--transition {
+  transition: transform 0.185s cubic-bezier(0.4, 0, 0, 1);
+}
+
+
+.r {
+  background: #dc4b27;
+
+  border-top: 2px solid #dc4b27;
+}
+
+
+.b {
+  background: #1e88e5;
+
+  border-top: 2px solid #4ca0ea;
+}
+
+
+.y {
+  background: #fdd835;
+
+  border-top: 2px solid #fee268;
+}
+.a{
+  background: #bb002b;
+
+  border-top: 2px solid #bb002b;
+}
+.n{
+  background: #85c147;
+
+  border-top: 2px solid #85c147;
+}
+.q{
+  background: #e0bb79;
+
+  border-top: 2px solid #e0bb79;
+}
+.block-content__header__text{
+    color: white;
+}
+.txt{
+    color: white;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.card{
+   
+margin-left: 13%;
+
+}
+.html{
+    border-top: 9px solid #4ca0ea;
+}
+.js{
+    border-top: 9px solid #fee268;
+}
+.angular{
+    border-top: 9px solid #bb002b
+}
+.node{
+    border-top: 9px solid #85c147
+}
+.sql{
+    border-top: 9px solid  #e0bb79
+}
+.html .title,.card-title{
+    color: #4ca0ea;
+}
+.js .card-title{
+    color:#fee268 ;
+}
+.angular .card-title{
+    color:#bb002b;
+}
+.node .card-title{
+    color: #85c147;
+}
+.sql .card-title{
+    color:#e0bb79;
+}
+    .bounce {
+        -webkit-animation-name: bounce;
+        animation-name: bounce;
+        -webkit-transform-origin: center bottom;
+        -ms-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes bounce {
+        0%, 20%, 53%, 80%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        }
+        40%, 43% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+        }
+        70% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+        }
+        90% {
+        -webkit-transform: translate3d(0,-4px,0);
+        transform: translate3d(0,-4px,0);
+        }
+        }
+        
+        @keyframes bounce {
+        0%, 20%, 53%, 80%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        }
+        40%, 43% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+        }
+        70% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+        }
+        90% { -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
+        }
+        } 
