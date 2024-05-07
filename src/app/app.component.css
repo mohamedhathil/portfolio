@@ -1,29 +1,27 @@
-@import "~bootstrap-icons/font/bootstrap-icons.css";
-.navbar{
-    background-color:#120421 ;
+/* Import Bootstrap Icons */
+@import url("~bootstrap-icons/font/bootstrap-icons.css");
+
+/* Navbar Styles */
+.navbar {
+    background-color: #120421;
 }
-.navbar a{
+
+/* Navbar Link Styles */
+.navbar a, .navbar-brand {
     background: linear-gradient(45deg, #c01c64, #e5475b);
-    -webkit-background-clip: text; /* WebKit/Blink browsers */
+    -webkit-background-clip: text;
     color: transparent;
     text-decoration: none;
     font-size: large;
+    font-weight: bold; /* Apply bold font to navbar brand */
 }
 
-.navbar-brand{
-    background: linear-gradient(45deg, #c01c64, #e5475b);
-    -webkit-background-clip: text; /* WebKit/Blink browsers */
-    color: transparent;
-    text-decoration: none;
-    font-weight: bold;
-}
-.navbar-toggler-icon,.navbar-toggler{
+/* Navbar Toggler Styles */
+.navbar-toggler-icon, .navbar-toggler {
     background-color: white;
-    background-position: center;
-    background-size: cover;
-    color:black
 }
 
-nav a:hover{
-    color: #e5475b
+/* Navbar Link Hover Effect */
+.navbar a:hover {
+    color: #e5475b;
 }
