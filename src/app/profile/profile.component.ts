@@ -1,6 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { interval } from 'rxjs';
 import * as AOS from 'aos';
+import { SkillsComponent } from '../skills/skills.component';
+import { ScrollService } from '../scroll.service';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -9,11 +11,16 @@ import * as AOS from 'aos';
 export class ProfileComponent {
   developerRoles: string[] = ['FrontEnd Developer', 'Web Developer'];
   currentRoleIndex = 0;
-  
+  @ViewChild(SkillsComponent, {static: false}) otherComponent!: SkillsComponent;
+
 
   @ViewChild('roleText')
   roleText!: ElementRef;
+  constructor(private scrollService: ScrollService) {}
 
+  scrollToElement() {
+    this.scrollService.scrollToElement();
+  }
   ngAfterViewInit() {
     // Display first role immediately with animation
     this.triggerAnimation();
@@ -27,6 +34,7 @@ export class ProfileComponent {
   ngOnInit(): void{
     AOS.init();
   }
+  
 
   // Function to cycle through roles
   changeRole() {
@@ -40,4 +48,6 @@ export class ProfileComponent {
     void roleTextElement.offsetWidth; // Trigger reflow to restart the animation
     roleTextElement.classList.add('animate-text');
   }
+
 }
+

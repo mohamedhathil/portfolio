@@ -181,3 +181,21 @@ margin-left: 13%;
         90% { -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
         }
         } 
+        @media screen and (max-width: 769px) {
+          .block-wrap {
+            width: 460px;
+            height: 140px;
+          
+            display: flex;
+            position: relative;
+            overflow: hidden;
+          
+            border-radius: 8px;
+            margin-left: 1%;
+          
+          }
+          .card-body{
+            height: 410px;
+            overflow-y: auto;
+          }
+        }

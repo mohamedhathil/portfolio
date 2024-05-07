@@ -10,6 +10,7 @@ import { EducationComponent } from './education/education.component';
 import { SkillsCompComponent } from './skills-comp/skills-comp.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ScrollService } from './scroll.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ScrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

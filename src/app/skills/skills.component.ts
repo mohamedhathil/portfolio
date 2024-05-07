@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , HostListener, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
   activeTab = 'search';
+  isVisible: boolean = false;
 
-
-  constructor(){}
+  constructor(private elementRef: ElementRef, private renderer: Renderer2){}
   ngOnInit(): void {}
+  @ViewChild('container') container!: ElementRef;
   search(activeTab: string, $event: MouseEvent): void {
     $event.preventDefault();
     this.activeTab = activeTab;
@@ -29,4 +30,20 @@ export class SkillsComponent {
     $event.preventDefault();
     this.activeTab = activeTab;
   }
-}
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    const containerTop = this.container.nativeElement.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    // Check if any part of the container is within the viewport
+    if (containerTop <= windowHeight) {
+      this.isVisible = true;
+    } else {
+      this.isVisible = false;
+    }
+  }
+  
+  }
+  
+  
+  

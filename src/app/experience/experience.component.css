@@ -181,7 +181,7 @@
     left: -20px;
     width: 2px;
     height: calc(100% + 20px);
-    background: #f27c8d; /* Level 4 color */
+    background: linear-gradient(45deg, #c01c64, #e5475b); /* Level 4 color */
 }
   
 .level-4-wrapper li + li {
@@ -190,7 +190,7 @@
 
 .level-4 {
   font-weight: normal;
-  background: #f27c8d; /* Level 4 color */
+  background: linear-gradient(45deg, #c01c64, #e5475b); /* Level 4 color */
 }
 
 .level-4::before {

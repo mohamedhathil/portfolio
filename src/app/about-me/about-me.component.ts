@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent {
-
+  hipo:any=true
+  pay:any
+  repo:any
+  constructor() {}
+  ngOnInit(): void{
+   
+  }
+  func(val:any){
+    this.hipo = val === 'hipo';
+    this.pay = val === 'pay';
+    this.repo = val === 'repo';
+  }    
 }

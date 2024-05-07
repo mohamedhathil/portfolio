@@ -2,10 +2,10 @@
 @import "~aos/dist/aos.css";
 .title{
     background: linear-gradient(45deg, #c01c64, #e5475b);
-    -webkit-background-clip: text; /* WebKit/Blink browsers */
+    -webkit-background-clip: text; 
     color: transparent;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* Use writing-mode with text-orientation to create vertical texts */
+   
 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -47,11 +47,78 @@ ul li a {
     z-index: 100;
     background-color: #120421;
  }
+ .contact{
+    color: #c01c64;
+    text-align: center;
+ }
+ .flexy {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Define the styles when the element is visible */
+  .flexy.visible {
+    opacity: 1;
+    /* Add animation properties here */
+    animation: slideIn 0.5s ease;
+  }
+  
+  /* Define the keyframes for the animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px); /* Move the element up */
+    }
+    to {
+      transform: translateY(0); /* Move the element back to its original position */
+    }
+  }
+ .flexy{
+    justify-content: space-evenly;
+display: flex;
+align-items: center;
+text-align: center;
+
+ }
+ .flexy a{
+    text-decoration: none;
+
+ }
+ .flexy i{
+    font-size: 26px;
+    background: linear-gradient(45deg, #c01c64, #e5475b); /* Set background color */
+    border-radius: 50%; /* Set border radius to 50% */
+    padding: 10px 15px; /* Add padding for spacing */
+ }
+ .lin i{
+    color: blue;
+ }
+ .ml i{
+    color: white;
+ }
+ .phn i{
+    color: rgb(43, 237, 43);
+ }
+
+ .flexy p{
+    color: #c01c64;
+ }
+ .phn p,.ml p,.lin p{
+    margin-top: 19px;
+ }
+ 
    
 @media screen and (max-width: 769px) {
     #tabs{
         width: 100%;
         margin: auto;
     }
-    
+    .flexy {
+        flex-direction: column; /* Change to column layout for small screens */
+        align-items: center; /* Align items to the start of each line */
+    }
+    ul li {
+      padding: 5px;
+      margin-left: 6px;
+      color: white;
+  }
   }
