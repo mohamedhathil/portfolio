@@ -15,12 +15,15 @@
 
 @media screen and (max-width: 769px) {
     .carousel-item img{
-        width: 100%;
-        margin-top: 20px;
+        width: 70%;
+        margin-top: 35px;
+        margin-left: auto;
     }
     .carousel-control-next-icon{
         color: #b2192e;
+        margin-top: 10px;
     }
+    
     .row button{
         padding: 5px;
         width: 120px;

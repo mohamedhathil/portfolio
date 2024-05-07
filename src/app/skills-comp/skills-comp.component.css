@@ -183,17 +183,20 @@ margin-left: 13%;
         } 
         @media screen and (max-width: 769px) {
           .block-wrap {
-            width: 460px;
+            width: 400px;
             height: 140px;
           
             display: flex;
             position: relative;
-            overflow: hidden;
+            overflow: auto;
           
             border-radius: 8px;
             margin-left: 1%;
           
           }
+          .block-wrap::-webkit-scrollbar {
+            display: none;
+        }
           .card-body{
             height: 410px;
             overflow-y: auto;
